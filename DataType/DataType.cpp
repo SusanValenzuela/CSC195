@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    std::string name = "Jane Doe";
+    string name = "Jane Doe";
     char initial = 'D';
     short age = 21;
     bool isAdult = true;
