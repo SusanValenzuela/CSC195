@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    int randomNumber = rand() % 10 + 1; // Number between 1 and 10
+    int randomNumber = rand() % 10 + 1; 
     int guess;
     int attempts = 5;
 
