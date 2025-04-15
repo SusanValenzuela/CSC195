@@ -17,7 +17,6 @@ int main()
     numbers.push_back(18);
 
     numbers.pop_back();
-    numbers.pop_back();
 
     for (int i = 0; i < numbers.size(); i++) {
         cout << numbers[i] << endl;
