@@ -14,7 +14,6 @@ void Square(int& pizza)
 {
 	pizza = pizza * pizza;
 }
-
 int main()
 {
 	// ** REFERENCE **

@@ -7,62 +7,51 @@ using namespace std;
 
 int main()
 {
-    string fruits[5] = {"Bananna", "Kiwi", "Mango", "Chikoo", "Strawberry"};
+	cout << "_____________Array_Strings____________" << endl;
+	string daysOfWeek[7] = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
-    vector<int> numbers;
-    numbers.push_back(1);
-    numbers.push_back(3);
-    numbers.push_back(5);
-    numbers.push_back(7);
-    numbers.push_back(18);
+	int size = sizeof(daysOfWeek) / sizeof(daysOfWeek[0]);
+	cout << "Number of days in the week: " << size << endl;
 
-    numbers.pop_back();
+	for (int i = 0; i < (*daysOfWeek).size(); i++) {
+		cout << daysOfWeek[i] << endl;
+	}
 
-    for (int i = 0; i < numbers.size(); i++) {
-        cout << numbers[i] << endl;
-    }
-    cout << "_________________________" << endl;
+	cout << "_____________Vectors____________" << endl;
 
-    string chemicals[5] = { "Mercury","Hydrocloric Acid" "Chlorine", "Brownie", "Table Salt" };
+	vector<int> numbers = { 5, 10, 15, 20, 25 };
+	numbers.push_back(30);
+	numbers.push_back(35);
 
-    cout << chemicals[2] << endl;
-    cout << chemicals << endl;
-    cout << chemicals[0] << endl;
+	numbers.pop_back();
 
-    cout << "________________________" << endl;
+	for (int i = 0; i < numbers.size(); i++) {
+		cout << numbers[i] << endl;
+	}
 
-    for (int i = 0; i < (*chemicals).size(); i++) {
-        cout << &chemicals[i] << endl;
-    }
-    cout << "_________________________" << endl;
+	cout << "____________Lists_____________" << endl;
 
-    string* p = chemicals;
-    cout << p << endl;
-    cout << p++ << endl;
-    cout << p++ << endl;
-    cout << --p << endl;
+	list<string> fruit = { "Pineapple", "Grapefruit", "Passionfruit" };
 
-    cout << p  + 2 << endl;
-    cout << "_________________________" << endl;
-    //forward linked list single ony one direction -- double linked list -> list -> many directions
-    list<string> cars = ("Porsche", "Hyundai", "Mercades", "Volvo");
+	fruit.push_front("Dragon Fruit");
+	fruit.push_back("Starfruit");
 
-    cout << cars.front() << endl;
-    cout << cars.back() << endl;
+	fruit.remove("Pineapple");
 
-    cars.pop_back();
-    cout << cars.back()<< endl;
+	for (string fruit : fruit) {
+		cout << fruit << endl;
+	}
+	cout << "_____________Maps____________" << endl;
 
-    cars.push_front("Tesla");
-    cout << cars.front() << endl;
 
-    map<string, int> pet = { {"Dog", 23}, {"Freaky ahh Gojo", 3}, {"Turtle", 43} };
+	map<string, int> groceries = { { "Beef", 10 }, {"Milk", 4}, {"Eggs", 6} };
 
-    //Array vector list map
+	groceries["Eggs"] += 6;
 
-    
-    
 
+	for (pair<string, int> item : groceries) {
+		cout << item.first << ": " << item.second << endl;
+	}
 
 
 }
