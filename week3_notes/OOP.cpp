@@ -28,6 +28,5 @@ int main()
 
     }
 
-    Snake python;
-    python.Travel();
+    
 }
