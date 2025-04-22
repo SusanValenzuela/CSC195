@@ -127,15 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Classes.cpp" />
-    <ClCompile Include="Character.cpp" />
-    <ClCompile Include="Mage.cpp" />
-    <ClCompile Include="Warrior.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Base.cpp" />
+    <ClCompile Include="Cat.cpp" />
+    <ClCompile Include="Fox.cpp" />
+    <ClCompile Include="main1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Character.h" />
-    <ClInclude Include="Mage.h" />
-    <ClInclude Include="Warrior.h" />
+    <ClInclude Include="Base.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Cat.h" />
+    <ClInclude Include="Fox.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
