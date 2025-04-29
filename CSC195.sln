@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Template", "Template\Templa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Doug", "Doug\Doug.vcxproj", "{33E346EE-1F38-410D-B1BA-D98F7AB36E11}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fraction", "Fraction\Fraction.vcxproj", "{04FEF94A-7A81-4083-82AB-44B86576446E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -151,6 +153,14 @@ Global
 		{33E346EE-1F38-410D-B1BA-D98F7AB36E11}.Release|x64.Build.0 = Release|x64
 		{33E346EE-1F38-410D-B1BA-D98F7AB36E11}.Release|x86.ActiveCfg = Release|Win32
 		{33E346EE-1F38-410D-B1BA-D98F7AB36E11}.Release|x86.Build.0 = Release|Win32
+		{04FEF94A-7A81-4083-82AB-44B86576446E}.Debug|x64.ActiveCfg = Debug|x64
+		{04FEF94A-7A81-4083-82AB-44B86576446E}.Debug|x64.Build.0 = Debug|x64
+		{04FEF94A-7A81-4083-82AB-44B86576446E}.Debug|x86.ActiveCfg = Debug|Win32
+		{04FEF94A-7A81-4083-82AB-44B86576446E}.Debug|x86.Build.0 = Debug|Win32
+		{04FEF94A-7A81-4083-82AB-44B86576446E}.Release|x64.ActiveCfg = Release|x64
+		{04FEF94A-7A81-4083-82AB-44B86576446E}.Release|x64.Build.0 = Release|x64
+		{04FEF94A-7A81-4083-82AB-44B86576446E}.Release|x86.ActiveCfg = Release|Win32
+		{04FEF94A-7A81-4083-82AB-44B86576446E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
