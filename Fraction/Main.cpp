@@ -20,8 +20,7 @@ int main() {
     mathlib::Fraction<int> fraction3;
     std::cout << "Enter a fraction (format: numerator/denominator): \n";
     std::cin >> fraction3;
-
-    std::cout << fraction3 << std::endl;
+    
     std::cout << fraction3.toDouble() << std::endl;
 
     return 0;
