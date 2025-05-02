@@ -24,23 +24,7 @@ void Database::RemoveAll() {
     m_animals.clear();
 }
 
-void Database::Load(const std::string& filename) {
-    std::ifstream input(filename);
-    if (input.is_open()) {
-        RemoveAll();
-        while (!input.eof()) {
-            int type;
-            input >> type;
-            if (input.fail()) break;
-            std::unique_ptr<Animal> animal = Create(type);
-            if (animal) {
-                input >> *animal;
-                m_animals.push_back(std::move(animal));
-            }
-        }
-        input.close();
-    }
-}
+
 
 void Database::Save(const std::string& filename) {
     std::ofstream output(filename);
